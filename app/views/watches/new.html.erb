@@ -1,0 +1,6 @@
+<%= simple_form_for @watch do |f| %>
+  <%= f.input :model %>
+  <%= f.input :photo, as: :file %>
+  <%= f.input :price, as: :numeric %>
+  <%= f.button :submit %>
+<% end %>
