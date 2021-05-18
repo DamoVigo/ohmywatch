@@ -1,0 +1,36 @@
+.card {
+  transition: 0.5s;
+  width: 400px;
+  height: 400px;
+  background-color: #D5D8DC;
+  opacity: 0.9;
+  margin: 30px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card img {
+  border-radius: 15px 15px 0px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.model {
+  margin-top: 20px;
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+.price {
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+  opacity: 0.8;
+}
+
+.card:hover {
+  transition: 0.5s;
+  width: 410px;
+  height: 410px;
+}

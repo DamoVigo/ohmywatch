@@ -2,6 +2,7 @@ class WatchesController < ApplicationController
   skip_before_action :authenticate_user!, only: :home
 
   def index
+    @background = 'background_anrvus.jpg'
     @watches = Watch.all
   end
 
