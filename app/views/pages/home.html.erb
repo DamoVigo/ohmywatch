@@ -1,2 +1,68 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<html>
+<head>
+
+</head>
+
+<body>
+  <div id="root">
+  <div id="topnav" class="topnav">
+    <a id="home_link" class="topnav_link" href="/"><h1 class="title">OhMyWatch</h1></a>
+
+    <a id="topnav_hamburger_icon">
+      <!-- Some spans to act as a hamburger -->
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <a href="#"><%= image_tag("avatar", class: "avatar") %></a>
+    <!-- Responsive Menu -->
+    <nav role="navigation" id="topnav_responsive_menu">
+      <ul>
+        <li><a href="/"><p class="text-navbar">HOME</p></a></li>
+        <li><a href="#"><p class="text-navbar">PROFIL</p></a></li>
+        <li><a href="#"><p class="text-navbar">WATCHES</p></a></li>
+        <li><a href="#"><p class="text-navbar">BOOKINGS</p></a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('<%= cl_image_path @background %>')">
+  <div class="container">
+    <div class="contain">
+      <h1>OhMyWatch <strong>add style</strong> to <strong>your outfit.</strong></h1>
+      <p>Change your watch as soon as you want.</p>
+    </div>
+  </div>
+</div>
+<div class="container-fixed">
+  <div class="fixed">
+    <div class="transparent">
+    <%= image_tag("watch", class: "watch") %>
+    </div>
+  </div>
+  <div class="text-fixed">
+    <h1 class="text">the sign of quality</h1>
+  </div>
+</div>
+<div class="test">
+  <div class="text-not-fixed">
+    <h1 class="text2">Exact time for life</h1>
+  </div>
+  <div class="transparent2">
+    <%= image_tag("watch2", class: "watch2") %>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
+  <div class="footer-copyright">
+    ©2021 <i class="fas fa-heart"></i> OhMyWatch
+  </div>
+</div>
+
+</body>
+</html>
+

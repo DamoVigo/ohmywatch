@@ -1,0 +1,169 @@
+.watch {
+  height: 500px;
+  position: relative;
+}
+.fixed {
+  padding-bottom: 250px;
+  width: 45%;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.test {
+  background: black;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.transparent {
+  background-color: grey;
+  margin-top: 50px;
+  height: 550px;
+  width: 400px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  opacity: 0.33;
+}
+
+.transparent img {
+  opacity: 0.99;
+}
+
+.text {
+  margin-top: 260px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container-fixed {
+  margin-top: 90px;
+  position: sticky;
+  top: 140px;
+  z-index: -99;
+  height: 750px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-fixed {
+  width: 45%;
+  float: right;
+  height: 400px;
+}
+.watch2 {
+  height: 500px;
+  position: relative;
+  opacity: 0.9;
+}
+
+.text2 {
+  color: white;
+  margin-top: 300px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.transparent2 {
+  background-color: white;
+  margin-top: 115px;
+  height: 510px;
+  width: 500px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+
+.text-not-fixed {
+  width: 850px;
+  height: 400px;
+  text-align: center;
+}
+
+.bar {
+  width: 80%;
+  margin-left: 140px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 2200px;
+  z-index: 99;
+}
+
+.bar-black {
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 640px;
+  left: 300px;
+  right: 300px;
+}
+
+.white {
+  background-color: white;
+  margin-top: 0px;
+  height: 100vh;
+  width: 50%;
+  position: sticky;
+  top: 0px;
+}
+
+.black {
+  width: 100%;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  z-index: -90;
+}
+
+.white2 {
+  width: 100%;
+  height: 1000px;
+  background-color: white;
+}
+
+.description {
+  color: black;
+  background-color: white;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+.black2 {
+  background-color: black;
+  height: 100vh;
+  width: 50%;
+  position: absolute;
+  top: 2219px;
+  right: 0px;
+}
+
+.text-black {
+  color: black;
+  position: absolute;
+  right: 0px;
+  padding: 50px;
+}
+
+.text-bottom {
+  background-color: #5D6D7E;
+  position: absolute;
+  top: 3100px;
+  right: 60px;
+  width: 40%;
+  text-align: center;
+  color: white;
+}
+
+.watch3 {
+  margin-top: 1px;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  opacity: 0.7;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+}
