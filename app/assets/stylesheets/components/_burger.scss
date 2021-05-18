@@ -41,7 +41,8 @@
     position: sticky;
     top: 0px;
     overflow-x: hidden;
-    z-index: 99
+    z-index: 99;
+    overflow: hidden;
   }
 
   /* show responsive menu and position at the right of the screen */
