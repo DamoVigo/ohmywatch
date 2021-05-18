@@ -22,6 +22,12 @@ class WatchesController < ApplicationController
     end
   end
 
+  def destroy
+    @watch = Watch.find(params[:id])
+    @watch.destroy
+  end
+
+
   private
 
   def watch_params
