@@ -1,7 +1,7 @@
 .card {
   transition: 0.5s;
   width: 400px;
-  height: 400px;
+  height: 450px;
   background-color: #D5D8DC;
   opacity: 0.9;
   margin: 30px;
@@ -25,12 +25,53 @@
 .price {
   position: absolute;
   right: 30px;
-  bottom: 0px;
+  bottom: 10px;
   opacity: 0.8;
 }
 
 .card:hover {
   transition: 0.5s;
   width: 410px;
-  height: 410px;
+  height: 460px;
+}
+
+.btn-edit {
+  transition: 0.5s;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 15px;
+  padding: 10px 20px;
+  background-color: white;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-edit:hover {
+  transition: 0.5s;
+  text-decoration: none;
+  color: inherit;
+  color: white;
+  background-color: grey;
+}
+.container {
+  margin-top: 30px;
+}
+.btn {
+  transition: 0.5s;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: white;
+  background-color: grey;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.btn:hover {
+  transition: 0.5s;
+  text-decoration: none;
+  color: inherit;
+  color: white;
+  padding: 12px 22px;
 }

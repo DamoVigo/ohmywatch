@@ -14,6 +14,7 @@
         <%= link_to (cl_image_tag watch.photo.key, height: 300, width: 400, crop: :fill), watch_path(watch) %>
         <p class="model"><%= watch.model %></p>
         <p class="price"><%= watch.price %>$</p>
+        <%= link_to 'Edit', edit_watch_path(watch), class: 'btn-edit'%>
       </div>
       <% end %>
   </div>
