@@ -6,7 +6,7 @@
     </div>
   </div>
 </div>
-
+<%= link_to 'New', new_watch_path, class: 'book_now' %>
 <div class="container">
   <div class="row d-flex justify-content-between">
     <% @watches.each do |watch|  %>
@@ -18,7 +18,11 @@
         <% end %>
         <p class="model"><%= watch.model %></p>
         <p class="price"><%= watch.price %>$</p>
-        <%= link_to 'Edit', edit_watch_path(watch), class: 'btn-edit'%>
+        <% current_user.watches.each do |watch2| %>
+          <% if watch2 == watch %>
+            <%= link_to 'Edit', edit_watch_path(watch), class: 'btn-edit'%>
+          <% end %>
+        <% end %>
       </div>
       <% end %>
   </div>

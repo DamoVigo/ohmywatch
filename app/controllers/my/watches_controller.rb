@@ -1,6 +1,6 @@
 class My::WatchesController < ApplicationController
   skip_before_action :authenticate_user!, only: :index
-  
+
   def index
     @watches = current_user.watches
   end
@@ -34,7 +34,7 @@ class My::WatchesController < ApplicationController
 
     redirect_to watch_path(@watch)
   end
-  
+
   def destroy
     @watch = current_user.watches.find(params[:id])
     @watch.user_id = current_user.id

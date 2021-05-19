@@ -1,5 +1,5 @@
 .book_now {
-  width: 150px;
+  width: 100px;
   height: 37px;
   background-color: #F59A07;
   text-align: center;
@@ -12,10 +12,14 @@
   float: right;
   margin-right: 30px;
   transition: 0.5s;
+  z-index: 99;
+  text-decoration: none;
 }
 
 .book_now:hover{
-  width: 152px;
+  width: 102px;
   height: 38px;
   transition: 0.5s;
+  text-decoration: none;
+  color: white;
 }

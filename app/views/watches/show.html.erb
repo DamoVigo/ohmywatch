@@ -16,9 +16,21 @@
         <% end %>
         <div class="model2"><p><%= @watch.model %></p></div>
         <p class="price2"><%= @watch.price %>$</p>
-        <%= link_to 'Edit', edit_watch_path(@watch), class: 'btn-edit2'%>
-        <a class="btn-book">Book Now</a>
-      </div>
+        <% current_user.watches.each do |watch2| %>
+          <% if watch2 == @watch %>
+            <%= link_to 'Edit', edit_watch_path(@watch), class: 'btn-edit2'%>
+          <% end %>
+        <% end %>
+        <%= link_to 'Book Now', my_booking_path, class: 'btn-book'%>
+        <% current_user.watches.each do |watch2| %>
+          <% if watch2 == @watch %>
+        <%= link_to "X",
+                        watch_path(@watch),
+                        method: :delete,
+                        data: { confirm: "Are you sure?" }, class: 'btn-danger' %></p>
+        <% end %>
+        <% end %>
+        </div>
 </div>
 <div class="footer">
   <div class="footer-links">
