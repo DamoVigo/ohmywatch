@@ -75,3 +75,62 @@
   color: white;
   padding: 12px 22px;
 }
+
+.image {
+  height: 300;
+  width: 400;
+}
+
+.card2 {
+  margin: 30px auto;
+  width: 90%;
+  height: 60vh;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card2 img{
+  position: absolute;
+  bottom: -200px;
+  left: 180px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.model2 {
+  margin-top: 20px;
+  font-size: 40px;
+  opacity: 0.8;
+  position: absolute;
+  right: 450px;
+  bottom: 20px;
+}
+
+.price2 {
+  position: absolute;
+  right: 610px;
+  bottom: -30px;
+  opacity: 0.8;
+}
+
+.btn-edit2 {
+  transition: 0.5s;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 15px;
+  padding: 10px 50px;
+  background-color: white;
+  position: absolute;
+  right: 270px;
+  bottom: -200px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-edit2:hover {
+  transition: 0.5s;
+  text-decoration: none;
+  color: inherit;
+  color: white;
+  background-color: grey;
+}

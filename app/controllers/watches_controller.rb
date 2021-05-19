@@ -7,6 +7,7 @@ class WatchesController < ApplicationController
   end
 
   def show
+    @background = 'background_anrvus.jpg'
     @watch = Watch.find(params[:id])
   end
 
