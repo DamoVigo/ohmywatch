@@ -1,0 +1,19 @@
+
+
+<div class="container">
+  <div class="row d-flex justify-content-between">
+    <% @watches.each do |watch|  %>
+      <div class="card">
+        <% if watch.photo.attached? %>
+          <%= link_to (cl_image_tag watch.photo.key, height: 300, width: 400, crop: :fill), watch_path(watch) %>
+          <% else %>
+          <%= link_to (cl_image_tag 'https://cdn.shopify.com/s/files/1/0314/1333/products/Slider-horizon-montre-homme-chronographe-charlie-paris-6_2000x.jpg?v=1620225946', height: 300, width: 400, crop: :fill), watch_path(watch) %>
+        <% end %>
+        <p class="model"><%= watch.model %></p>
+        <p class="price"><%= watch.price %>$</p>
+        <%= link_to 'Edit', edit_watch_path(watch), class: 'btn-edit'%>
+      </div>
+      <% end %>
+  </div>
+</div>
+

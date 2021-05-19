@@ -1,14 +1,12 @@
-class WatchesController < ApplicationController
-  skip_before_action :authenticate_user!, only: :home
-
+class My::WatchesController < ApplicationController
+  skip_before_action :authenticate_user!, only: :index
+  
   def index
-    @background = 'background_anrvus.jpg'
-    @watches = Watch.all
+    @watches = current_user.watches
   end
 
   def show
-    @background = 'background_anrvus.jpg'
-    @watch = Watch.find(params[:id])
+    @watch = current_user.watches.find(params[:id])
   end
 
   def new
@@ -26,11 +24,11 @@ class WatchesController < ApplicationController
   end
 
   def edit
-    @watch = Watch.find(params[:id])
+    @watch = current_user.watches.find(params[:id])
   end
 
   def update
-    @watch = Watch.find(params[:id])
+    @watch = current_user.watches.find(params[:id])
     @watch.user_id = current_user.id
     @watch.update(watch_params)
 
@@ -38,7 +36,7 @@ class WatchesController < ApplicationController
   end
   
   def destroy
-    @watch = Watch.find(params[:id])
+    @watch = current_user.watches.find(params[:id])
     @watch.user_id = current_user.id
     @watch.destroy
   end
@@ -48,4 +46,5 @@ class WatchesController < ApplicationController
   def watch_params
     params.require(:watch).permit(:model, :price, :photo)
   end
+
 end
