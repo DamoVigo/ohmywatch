@@ -1,4 +1,3 @@
-class BookingsController < ApplicationController
     class BookingsController < ApplicationController
         def index
             @background = 'background_anrvus.jpg'
