@@ -12,9 +12,9 @@
     <!-- Responsive Menu -->
     <nav role="navigation" id="topnav_responsive_menu">
       <ul>
-        <li><a href="/"><p class="text-navbar">HOME</p></a></li>
+        <li><%= link_to 'HOME', root_path, class: 'text-navbar'%></li>
         <li><a href="#"><p class="text-navbar">PROFIL</p></a></li>
-        <li><a href="#"><p class="text-navbar">WATCHES</p></a></li>
+        <li><%= link_to 'WATCHES', watches_path, class: 'text-navbar'%></li>
         <li><a href="#"><p class="text-navbar">BOOKINGS</p></a></li>
       </ul>
     </nav>

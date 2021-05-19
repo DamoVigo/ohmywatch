@@ -1,5 +1,5 @@
 <div class="container">
-  <%= simple_form_for @watch do |f| %>
+  <%= simple_form_for @watch, html: { class: "form"} do |f| %>
     <%= f.input :model %>
     <%= f.input :photo, as: :file %>
     <%= f.input :price, as: :numeric %>
