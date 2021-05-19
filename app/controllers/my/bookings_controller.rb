@@ -1,3 +1,4 @@
+
     class My::BookingsController < ApplicationController
         def index
             @background = 'background_anrvus.jpg'
