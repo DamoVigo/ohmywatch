@@ -102,9 +102,7 @@
   margin-top: 20px;
   font-size: 40px;
   opacity: 0.8;
-  position: absolute;
-  right: 450px;
-  bottom: 20px;
+  text-align: center;
 }
 
 .price2 {
@@ -129,6 +127,29 @@
 
 .btn-edit2:hover {
   transition: 0.5s;
+  text-decoration: none;
+  color: inherit;
+  color: white;
+  background-color: grey;
+}
+
+.btn-book {
+  transition: 0.5s;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 15px;
+  padding: 10px 50px;
+  background-color: #F59A07;
+  color: white;
+  position: absolute;
+  right: 480px;
+  bottom: -200px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-book:hover {
+  transition: 0.5s;
+  cursor: pointer;
   text-decoration: none;
   color: inherit;
   color: white;

@@ -1,0 +1,21 @@
+.book_now {
+  width: 150px;
+  height: 37px;
+  background-color: #F59A07;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: sticky;
+  top: 720px;
+  float: right;
+  margin-right: 30px;
+  transition: 0.5s;
+}
+
+.book_now:hover{
+  width: 152px;
+  height: 38px;
+  transition: 0.5s;
+}
