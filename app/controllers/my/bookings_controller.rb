@@ -1,11 +1,12 @@
-    class BookingsController < ApplicationController
+
+    class My::BookingsController < ApplicationController
         def index
             @background = 'background_anrvus.jpg'
-            @bookings = Bookings.all
+            @bookings = Booking.all
           end
 
           def show
-            @booking = Watch.find(params[:id])
+            @booking = Booking.find(params[:id])
           end
 
           def new
@@ -35,6 +36,8 @@
           def destroy
             @booking = Booking.find(params[:id])
             @booking.destroy
+
+            redirect_to my_bookings_path
           end
 
           private
