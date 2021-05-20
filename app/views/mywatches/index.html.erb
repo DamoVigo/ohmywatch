@@ -1,1 +1,32 @@
-index.html.erb
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('<%= cl_image_path @background %>')">
+  <div class="container">
+    <div class="contain">
+      <h1>OhMyWatch <strong>add style</strong> to <strong>your outfit.</strong></h1>
+      <p>Change your watch as soon as you want.</p>
+    </div>
+  </div>
+</div>
+<%= link_to 'New', new_watch_path, class: 'book_now' %>
+<div id="mainView" class="container">
+  <div class="row d-flex justify-content-between">
+    <% @watches.each do |watch|  %>
+      <div class="card">
+        <% if watch.photo.attached? %>
+          <%= link_to (cl_image_tag watch.photo.key, height: 300, width: 400, crop: :fill), watch_path(watch) %>
+          <% else %>
+          <%= link_to (cl_image_tag 'https://cdn.shopify.com/s/files/1/0314/1333/products/Slider-horizon-montre-homme-chronographe-charlie-paris-6_2000x.jpg?v=1620225946', height: 300, width: 400, crop: :fill), watch_path(watch) %>
+        <% end %>
+        <p class="model"><%= watch.model %></p>
+        <p class="price"><%= watch.price %>$</p>
+        <% current_user.watches.each do |watch2| %>
+          <% if watch2 == watch %>
+            <%= link_to 'Edit', edit_watch_path(watch), class: 'btn-edit'%>
+          <% end %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
