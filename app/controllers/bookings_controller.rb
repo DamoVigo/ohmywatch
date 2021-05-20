@@ -1,8 +1,7 @@
     class BookingsController < ApplicationController
         def index
             @background = 'background_anrvus.jpg'
-            @bookings = Booking.all
-            @watch = Watch.find(params[:watch_id])
+            @bookings = Booking.where(user: current_user)
           end
 
           def show
@@ -22,7 +21,7 @@
             @watch = Watch.find(params[:watch_id])
             @booking.watch = @watch
             if @booking.save
-              redirect_to watch_bookings_path(@watch)
+              redirect_to bookings_path
             else
               render :new
             end
