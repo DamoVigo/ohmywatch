@@ -1,6 +1,14 @@
 <div id="root">
   <div id="topnav" class="topnav">
     <a id="home_link" class="topnav_link" href="/"><h1 class="title">OhMyWatch</h1></a>
+    <div class="session-container">
+      <% if user_signed_in? %>
+        <%= link_to 'Log-out', destroy_user_session_path, :method => :delete, class: 'session-text'%>
+      <% else %>
+        <%= link_to 'Sign-up', new_user_registration_path, class: 'session-text'%>
+        <%= link_to "Log in", new_user_session_path, class: 'session-text' %>
+      <% end %>
+    </div>
 
     <a id="topnav_hamburger_icon">
       <!-- Some spans to act as a hamburger -->
@@ -8,14 +16,15 @@
       <span></span>
       <span></span>
     </a>
-    <a href="#"><%= image_tag("avatar.png", class: "avatar") %></a>
+    <!--a href="#"><%= image_tag("avatar.png", class: "avatar") %></a-->
     <!-- Responsive Menu -->
     <nav role="navigation" id="topnav_responsive_menu">
       <ul>
         <li><%= link_to 'HOME', root_path, class: 'text-navbar'%></li>
-        <li><a href="#"><p class="text-navbar">PROFIL</p></a></li>
-        <li><%= link_to 'WATCHES', watches_path, class: 'text-navbar'%></li>
-        <li><a href="#"><p class="text-navbar">BOOKINGS</p></a></li>
+        <li><%= link_to 'MY PROFIL', edit_user_registration_path, class: 'text-navbar pb-3'%></li>
+        <li><%= link_to 'SHOP', watches_path, class: 'text-navbar'%></li>
+        <li><%= link_to 'MY WATCHES', watches_path, class: 'text-navbar'%></li>
+        <li><a href="#"><p class="text-navbar">MY BOOKINGS</p></a></li>
       </ul>
     </nav>
   </div>
