@@ -4,6 +4,12 @@ class WatchesController < ApplicationController
   def index
     @background = 'background_anrvus.jpg'
     @watches = Watch.all
+    @markers = @watches.geocoded.map do |watch|
+      {
+        lat: watch.latitude,
+        lng: watch.longitude
+      }
+    end
   end
 
   def show
