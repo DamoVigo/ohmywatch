@@ -51,7 +51,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: relative;
   left: 200px;
-  bottom: 40px;
+  bottom: 85px;
 }
 
 .btn-edit3:hover {
@@ -60,4 +60,22 @@
   color: inherit;
   color: white;
   background-color: grey;
+}
+
+.total_price {
+  position: relative;
+  bottom: 70px;
+}
+
+.btn-cross {
+  position: relative;
+  bottom: 490px;
+  left: 100px;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+.btn-cross:hover {
+  text-decoration: none;
+  color: white;
 }
