@@ -1,13 +1,18 @@
-.container {
+.container_input {
   margin-top: 30px;
   width: 400px;
-  border: 1px solid grey;
+  border: 1px solid darkgray;
   padding: 20px;
   border-radius: 5px;
-  
+  margin-bottom: 60px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  color: darkgray;
+  font-family: "Raleway", sans-serif;
 }
 
 .container_form {
+  display: flex;
+  justify-content: space-around;
   height: 100vh;
   width: 100vw;
   background-color: white ;
