@@ -20,11 +20,12 @@ require("channels")
 // Note(lewagon): ABOVE IS RAILS DEFAULT CONFIGURATION
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
 // ----------------------------------------------------
-
+import 'mapbox-gl/dist/mapbox-gl.css';
 // External imports
 import "bootstrap";
-import {burger} from 'plugin/burger.js';
-import {scroll} from 'plugin/scroll.js'
+import {burger} from 'plugins/burger.js';
+import {scroll} from 'plugins/scroll.js'
+import { initMapbox } from '../plugins/init_mapbox';
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -33,3 +34,7 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
   burger();
 });
+
+document.addEventListener('turbolinks:load', () => {
+  initMapbox();
+})

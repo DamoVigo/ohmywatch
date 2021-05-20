@@ -34,6 +34,9 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'bootstrap'
 
+# Add a map
+gem 'geocoder'
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
