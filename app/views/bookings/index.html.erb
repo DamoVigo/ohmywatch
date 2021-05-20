@@ -11,15 +11,19 @@
   <div class="row d-flex justify-content-between">
     <% @bookings.each do |booking|  %>
       <div class="card3">
-        <%= image_tag("watch4.jpeg") %>
+        <% if booking.watch.photo.attached? %>
+          <%= link_to (cl_image_tag booking.watch.photo.key, height: 300, width: 400, crop: :fill), watch_path(booking.watch) %>
+          <% else %>
+          <%= link_to (cl_image_tag 'https://cdn.shopify.com/s/files/1/0314/1333/products/Slider-horizon-montre-homme-chronographe-charlie-paris-6_2000x.jpg?v=1620225946', height: 300, width: 400, crop: :fill), watch_path(booking.watch) %>
+        <% end %>
         <h1>Bookings</h1>
         <p class="start_date"><%= booking.start_date %></p>
         <p class="end_date"><%= booking.end_date %></p>
-        <% total_price = @watch.price * (booking.end_date - booking.start_date + 1) %>
+        <% total_price = booking.watch.price * (booking.end_date - booking.start_date + 1) %>
         <p class="total_price"><%= total_price.to_f %>$</p>
-        <%= link_to 'Edit', edit_watch_booking_path(@watch, booking), class: 'btn-edit3' %>
+        <%= link_to 'Edit', edit_booking_path(booking), class: 'btn-edit3' %>
         <%= link_to "X",
-                          watch_booking_path(@watch, booking),
+                          booking_path(booking),
                           method: :delete,
                           data: { confirm: "Are you sure?" }, class: 'btn-cross' %></p>
 
