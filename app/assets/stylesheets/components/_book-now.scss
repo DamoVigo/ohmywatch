@@ -8,7 +8,7 @@
   color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: sticky;
-  top: 720px;
+  top: 600px;
   float: right;
   margin-right: 30px;
   transition: 0.5s;
@@ -22,4 +22,51 @@
   transition: 0.5s;
   text-decoration: none;
   color: white;
+}
+
+.book_now2 {
+  width: 150px;
+  height: 37px;
+  background-color: #F59A07;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: sticky;
+  top: 600px;
+  float: right;
+  margin-right: 30px;
+  transition: 0.5s;
+  z-index: 99;
+  text-decoration: none;
+}
+
+.book_now2:hover{
+  width: 152px;
+  height: 38px;
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-height: 538px) {
+  .book_now2 {
+    position: sticky;
+    top: 400px;
+  }
+  .book_now {
+    position: sticky;
+    top: 400px;
+  }
+}
+@media (max-height: 638px) and (min-height: 538px) {
+  .book_now2 {
+    position: sticky;
+    top: 500px;
+  }
+  .book_now {
+    position: sticky;
+    top: 500px;
+  }
 }

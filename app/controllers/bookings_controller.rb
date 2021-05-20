@@ -1,4 +1,4 @@
-    class My::BookingsController < ApplicationController
+    class BookingsController < ApplicationController
         def index
             @background = 'background_anrvus.jpg'
             @bookings = Booking.all
@@ -9,13 +9,20 @@
           end
 
           def new
+            @watch = Watch.find(params[:watch_id])
             @booking = Booking.new
+            @booking.watch = @watch
+            @user = current_user
           end
 
           def create
             @booking = Booking.new(booking_params)
+            @user = current_user
+            @watch = Watch.find(params[:watch_id])
+            @booking.watch = @watch
+            raise
             if @booking.save
-              redirect_to my_bookings_path
+              redirect_to watch_bookings_path
             else
               render :new
             end

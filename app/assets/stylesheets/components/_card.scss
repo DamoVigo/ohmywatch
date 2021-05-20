@@ -91,9 +91,8 @@
 }
 
 .card2 img{
-  position: absolute;
-  bottom: -200px;
-  left: 180px;
+  margin-top: 0px;
+  margin-left: 30px;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -106,10 +105,9 @@
 }
 
 .price2 {
-  position: absolute;
-  right: 610px;
-  bottom: -30px;
+  margin-left: 30px;
   opacity: 0.8;
+  margin-top: 100px;
 }
 
 .btn-edit2 {
@@ -117,11 +115,13 @@
   text-decoration: none;
   color: inherit;
   border-radius: 15px;
-  padding: 10px 50px;
   background-color: white;
-  position: absolute;
-  right: 270px;
-  bottom: -200px;
+  height: 30px;
+  width: 100px;
+  margin-top: 250px;
+  margin-right: 100px;
+  padding-top: 3px;
+  text-align: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -138,12 +138,14 @@
   text-decoration: none;
   color: inherit;
   border-radius: 15px;
-  padding: 10px 50px;
+  margin-top: 250px;
+  margin-right: 100px;
+  height: 30px;
+  width: 120px;
+  text-align: center;
   background-color: #F59A07;
+  padding-top: 3px;
   color: white;
-  position: absolute;
-  right: 480px;
-  bottom: -200px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -160,10 +162,8 @@
   color: black;
   font-size: 24px;
   background-color: white;
-  position: absolute;
-  right: 160px;
-  bottom: 150px;
   opacity: 0.5;
+  margin-top: -70px;
 }
 .btn-danger:hover {
   background-color: white;
@@ -177,4 +177,9 @@
   text-decoration: none;
   color: black;
   opacity: 1;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
 }
