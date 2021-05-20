@@ -21,6 +21,26 @@
 .text-navbar{
   font-size: 12px;
 }
+
+.text-navbar:hover{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.session-container {
+  padding-right: 3em;
+}
+
+.session-text {
+  color: black;
+  padding-right: 1em;
+}
+
+.session-text:hover {
+  color: black;
+  text-decoration: none;
+  color: #F59A07;
+}
 /* hide responsive menu */
 #topnav_hamburger_icon,
 #topnav_responsive_menu {

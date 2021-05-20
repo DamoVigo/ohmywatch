@@ -1,0 +1,81 @@
+.start_date {
+  background-color: #F59A07;
+  width: 30%;
+  border-radius: 15px;
+  color: white;
+  margin-left: 20px;
+}
+
+.end_date {
+  background-color: #F59A07;
+  width: 30%;
+  border-radius: 15px;
+  color: white;
+  margin-left: 20px;
+}
+
+.card3 {
+  transition: 0.5s;
+  width: 400px;
+  height: 450px;
+  background-color: #D5D8DC;
+  opacity: 0.9;
+  margin: 30px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card3 img {
+  border-radius: 15px 15px 0px 0px;
+  height: 70%;
+  width: 100%;
+}
+
+.card3:hover {
+  transition: 0.5s;
+  width: 410px;
+  height: 460px;
+}
+
+.btn-edit3 {
+  transition: 0.5s;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 15px;
+  background-color: white;
+  padding: 3px 20px;
+  margin-top: 250px;
+  margin-right: 100px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  left: 200px;
+  bottom: 85px;
+}
+
+.btn-edit3:hover {
+  transition: 0.5s;
+  text-decoration: none;
+  color: inherit;
+  color: white;
+  background-color: grey;
+}
+
+.total_price {
+  position: relative;
+  bottom: 70px;
+}
+
+.btn-cross {
+  position: relative;
+  bottom: 490px;
+  left: 100px;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+.btn-cross:hover {
+  text-decoration: none;
+  color: white;
+}

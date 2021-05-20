@@ -24,8 +24,10 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 // External imports
 import "bootstrap";
 import {burger} from 'plugins/burger.js';
+
 import {scroll} from 'plugins/scroll.js'
 import { initMapbox } from '../plugins/init_mapbox';
+
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
