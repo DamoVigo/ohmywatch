@@ -9,31 +9,31 @@
 
 <div class="container">
       <div class="card2">
-         <div class="model2"><p><%= @watch.model %></p></div>
-         <div class="info">
-        <% if @watch.photo.attached? %>
-          <%= cl_image_tag @watch.photo.key, height: 300, width: 400, crop: :fill %>
-        <% else %>
-          <%= cl_image_tag 'https://cdn.shopify.com/s/files/1/0314/1333/products/Slider-horizon-montre-homme-chronographe-charlie-paris-6_2000x.jpg?v=1620225946', height: 300, width: 400, crop: :fill %>
-        <% end %>
 
-        <p class="price2"><%= @watch.price %>$</p>
-        <% current_user.watches.each do |watch2| %>
-          <% if watch2 == @watch %>
-            <%= link_to 'Edit', edit_watch_path(@watch), class: 'btn-edit2'%>
-          <% end %>
-        <% end %>
-        <%= link_to 'Book Now', new_watch_booking_path(@watch), class: 'btn-book'%>
-        <% current_user.watches.each do |watch2| %>
-          <% if watch2 == @watch %>
-            <%= link_to "X",
+        <div class="model2">
+          <p><%= @watch.model %></p>
+        </div>
+        <% if @watch.user == current_user %>
+          <%= link_to "X",
                           watch_path(@watch),
                           method: :delete,
-                          data: { confirm: "Are you sure?" }, class: 'btn-danger' %></p>
-          <% end %>
+                          data: { confirm: "Are you sure?" }, class: 'btn-danger' %>
         <% end %>
+        <div class="info">
+          <% if @watch.photo.attached? %>
+            <%= cl_image_tag @watch.photo.key, height: 300, width: 400, crop: :fill %>
+          <% else %>
+            <%= cl_image_tag 'https://cdn.shopify.com/s/files/1/0314/1333/products/Slider-horizon-montre-homme-chronographe-charlie-paris-6_2000x.jpg?v=1620225946', height: 300, width: 400, crop: :fill %>
+          <% end %>
+
+          <p class="price2"><%= @watch.price %>$</p>
+          <% if @watch.user == current_user %>
+            <%= link_to 'Edit', edit_watch_path(@watch), class: 'btn-edit2'%>
+          <% end %>
+          <%= link_to 'Book Now', new_watch_booking_path(@watch), class: 'btn-book'%>
+
         </div>
-        </div>
+      </div>
 </div>
 <div class="footer">
   <div class="footer-links">

@@ -6,12 +6,12 @@
   opacity: 0.9;
   margin: 30px;
   text-align: center;
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .card img {
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
   height: 100%;
   width: 100%;
 }
@@ -39,13 +39,13 @@
   transition: 0.5s;
   text-decoration: none;
   color: inherit;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 10px 20px;
   background-color: white;
   position: absolute;
   left: 20px;
   bottom: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .btn-edit:hover {
@@ -63,11 +63,11 @@
   transition: 0.5s;
   text-decoration: none;
   color: inherit;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 10px 20px;
   color: white;
   background-color: grey;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .btn:hover {
   transition: 0.5s;
@@ -84,18 +84,18 @@
 
 .card2 {
   margin: 30px auto;
-  width: 90%;
+  width: 800px;
   height: 60vh;
   background-color: white;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .card2 img{
   margin-top: 0px;
   margin-left: 30px;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .model2 {
@@ -115,7 +115,7 @@
   transition: 0.5s;
   text-decoration: none;
   color: inherit;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: white;
   height: 30px;
   width: 100px;
@@ -123,7 +123,7 @@
   margin-right: 100px;
   padding-top: 3px;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .btn-edit2:hover {
@@ -138,16 +138,16 @@
   transition: 0.5s;
   text-decoration: none;
   color: inherit;
-  border-radius: 15px;
+  border-radius: 5px;
   margin-top: 250px;
-  margin-right: 100px;
   height: 30px;
-  width: 120px;
+  width: 150px;
+  margin-right: 20px;
   text-align: center;
   background-color: #F59A07;
   padding-top: 3px;
   color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .btn-book:hover {
@@ -161,10 +161,13 @@
 
 .btn-danger {
   color: black;
+  margin-right: 20px;
   font-size: 24px;
   background-color: white;
   opacity: 0.5;
-  margin-top: -70px;
+  position: relative;
+  top: -70px;
+  left: 770px;
 }
 .btn-danger:hover {
   background-color: white;
