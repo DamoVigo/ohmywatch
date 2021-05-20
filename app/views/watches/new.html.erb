@@ -5,7 +5,7 @@
       <%= f.input :photo, as: :file %>
       <%= f.input :price, as: :numeric %>
       <%= f.input :description %>
-      <%= f.input :address %>
+      <%= f.input :address, input_html: { id: 'watch_address' } %>
       <%= f.button :submit %>
     <% end %>
   </div>
