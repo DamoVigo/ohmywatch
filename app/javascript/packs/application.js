@@ -23,8 +23,8 @@ require("channels")
 
 // External imports
 import "bootstrap";
-import {burger} from 'plugin/burger.js';
-import {scroll} from 'plugin/scroll.js'
+import {burger} from 'plugins/burger.js';
+import {scroll} from 'plugins/scroll.js'
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
