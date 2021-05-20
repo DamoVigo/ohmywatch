@@ -3,13 +3,21 @@
 
  #mainView {
   display: flex;
+  justify-content : space-between;
 }
 
 #mapContainer {
-  height: 100vh;
+  margin-top: -20px;
   position: sticky;
-  top: 100px;
-  width: 1000px;
-  height: 500px;
+  top: 80px;
+  width: 700px;
+  height: 100vh;
   margin-right: -150px;
+}
+
+.container-watches {
+  display: flex;
+  flex-wrap: wrap;
+  margin:-10px;
+  width: 1000px;
 }

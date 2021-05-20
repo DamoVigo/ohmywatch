@@ -8,7 +8,7 @@
 </div>
 <%= link_to 'New', new_watch_path, class: 'book_now' %>
 <div id="mainView" class="container">
-  <div class="row d-flex justify-content-between">
+  <div class="container-watches">
     <% @watches.each do |watch|  %>
       <div class="card">
         <% if watch.photo.attached? %>
@@ -28,7 +28,7 @@
   </div>
   <div id="mapContainer">
     <div id="map"
-      style="width: 100%; height: 500px;"
+      style="width: 100%; height: 100vh;"
       data-markers="<%= @markers.to_json %>"
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
   </div>

@@ -45,7 +45,6 @@ class WatchesController < ApplicationController
 
   def destroy
     @watch = Watch.find(params[:id])
-    @watch.user_id = current_user.id
     @watch.destroy
 
     redirect_to watches_path
