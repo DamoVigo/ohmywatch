@@ -1,11 +1,11 @@
 <div class="container">
   <%= simple_form_for [@watch, @booking] do |f| %>
     <%= f.input :start_date, as: :date, start_year: Date.today.year,
-                              end_year: Date.today.year + 12, discard_day: true,
-                              order: [:month, :day, :year] %>
-    <%= f.input :end_date, as: :date, start_year: Date.today.year,
-                              end_year: Date.today.year + 12, discard_day: true,
-                              order: [:month, :day :year] %>
+                              end_year: Date.today.year - 12, discard_day: true,
+                              order: [:month, :year] %> %>
+    <%= f.input :end_date, as: :date, start_day: Date.today.day + 1,
+                              end_year: Date.today.year - 12, discard_day: true,
+                              order: [:month, :year] %> %>
     <%= f.button :submit %>
   <% end %>
 </div>

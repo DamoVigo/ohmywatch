@@ -19,6 +19,7 @@
         <h1>Bookings</h1>
         <p class="start_date"><%= booking.start_date %></p>
         <p class="end_date"><%= booking.end_date %></p>
+        <%= link_to 'Edit', edit_watch_booking_path(@watch, booking), class: 'btn-edit3' %>
       </div>
       <% end %>
   </div>
