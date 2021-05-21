@@ -26,7 +26,7 @@
             <%= cl_image_tag 'https://cdn.shopify.com/s/files/1/0314/1333/products/Slider-horizon-montre-homme-chronographe-charlie-paris-6_2000x.jpg?v=1620225946', height: 300, width: 400, crop: :fill %>
           <% end %>
 
-          <p class="price2"><%= @watch.price %>$</p>
+          <p class="price2"><%= @watch.price %>$ - <%= @watch.description %></p>
           <% if @watch.user == current_user %>
             <%= link_to 'Edit', edit_watch_path(@watch), class: 'btn-edit2'%>
           <% end %>
