@@ -1,7 +1,7 @@
 .start_date {
   background-color: #F59A07;
   width: 30%;
-  border-radius: 15px;
+  border-radius: 5px;
   color: white;
   margin-left: 20px;
 }
@@ -9,7 +9,7 @@
 .end_date {
   background-color: #F59A07;
   width: 30%;
-  border-radius: 15px;
+  border-radius: 5px;
   color: white;
   margin-left: 20px;
 }
@@ -22,12 +22,12 @@
   opacity: 0.9;
   margin: 30px;
   text-align: center;
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .card3 img {
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
   height: 70%;
   width: 100%;
 }
@@ -42,13 +42,13 @@
   transition: 0.5s;
   text-decoration: none;
   color: inherit;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: white;
   padding: 3px 20px;
   margin-top: 250px;
   margin-right: 100px;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: relative;
   left: 200px;
   bottom: 85px;
@@ -69,7 +69,7 @@
 
 .btn-cross {
   position: relative;
-  bottom: 490px;
+  bottom: 480px;
   left: 100px;
   text-decoration: none;
   color: #F59A07;

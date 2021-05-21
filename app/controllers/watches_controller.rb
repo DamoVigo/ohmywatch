@@ -44,7 +44,6 @@ class WatchesController < ApplicationController
   end
 
   def destroy
-    raise
     @watch = Watch.find(params[:id])
     @watch.destroy
 

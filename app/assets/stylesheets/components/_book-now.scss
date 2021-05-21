@@ -4,9 +4,9 @@
   background-color: #F59A07;
   text-align: center;
   font-size: 24px;
-  border-radius: 15px;
+  border-radius: 5px;
   color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: sticky;
   top: 600px;
   float: right;
@@ -30,9 +30,9 @@
   background-color: #F59A07;
   text-align: center;
   font-size: 24px;
-  border-radius: 15px;
+  border-radius: 5px;
   color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: sticky;
   top: 600px;
   float: right;
@@ -53,30 +53,60 @@
 @media (max-height: 538px) {
   .book_now2 {
     position: sticky;
-    top: 400px;
+    top: 440px;
   }
   .book_now {
     position: sticky;
-    top: 400px;
+    top: 440px;
   }
 }
-@media (max-height: 638px) and (min-height: 538px) {
+@media (max-height: 588px) and (min-height: 538px) {
   .book_now2 {
     position: sticky;
-    top: 500px;
+    top: 490px;
   }
   .book_now {
     position: sticky;
-    top: 500px;
+    top: 490px;
   }
 }
-@media (max-height: 738px) and (min-height: 638px) {
+@media (max-height: 638px) and (min-height: 588px) {
   .book_now2 {
     position: sticky;
-    top: 600px;
+    top: 540px;
   }
   .book_now {
     position: sticky;
-    top: 600px;
+    top: 540px;
+  }
+}
+@media (max-height: 688px) and (min-height: 638px) {
+  .book_now2 {
+    position: sticky;
+    top: 590px;
+  }
+  .book_now {
+    position: sticky;
+    top: 590px;
+  }
+}
+@media (max-height: 738px) and (min-height: 688px) {
+  .book_now2 {
+    position: sticky;
+    top: 640px;
+  }
+  .book_now {
+    position: sticky;
+    top: 640px;
+  }
+}
+@media (max-height: 788px) and (min-height: 738px) {
+  .book_now2 {
+    position: sticky;
+    top: 690px;
+  }
+  .book_now {
+    position: sticky;
+    top: 690px;
   }
 }
