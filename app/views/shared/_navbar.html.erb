@@ -16,7 +16,9 @@
       <span></span>
       <span></span>
     </a>
-    <!--a href="#"><%= image_tag("avatar.png", class: "avatar") %></a-->
+    <% if current_user %>
+    <%=cl_image_tag current_user.photo.key, crop: :fill, class: "avatar" %>
+    <% end %>
     <!-- Responsive Menu -->
     <nav role="navigation" id="topnav_responsive_menu">
       <ul>
