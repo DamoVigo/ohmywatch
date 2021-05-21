@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   end
   resources :bookings, except: [:new, :create, :show]
   resources :mywatches, only: [:index]
+  resources :myreservation, only: [:index]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
