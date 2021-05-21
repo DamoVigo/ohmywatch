@@ -18,13 +18,12 @@
 }
 
 .transparent {
-  background-color: grey;
   margin-top: 50px;
   height: 550px;
   width: 400px;
   margin-bottom: 50px;
   margin-left: 50px;
-  opacity: 0.33;
+  opacity: 0.5;
 }
 
 .transparent img {
@@ -66,11 +65,15 @@
 .transparent2 {
   background-color: white;
   margin-top: 115px;
-  height: 510px;
+  height: 802px;
   width: 500px;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  opacity: 0.5;
+  position: relative;
+  top: -116px;
+  background-color: #f2f2f2;
+}
+
+.transparent2 img{
+  margin-top: 150px;
 }
 
 .text-not-fixed {
