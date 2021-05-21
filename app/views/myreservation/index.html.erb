@@ -21,13 +21,7 @@
         <p class="end_date"><%= booking.end_date %></p>
         <% total_price = booking.watch.price * (booking.end_date - booking.start_date + 1) %>
         <p class="total_price"><%= total_price.to_f %>$</p>
-        <%= link_to 'Edit', edit_booking_path(booking), class: 'btn-edit3' %>
-        <%= link_to "X",
-                          booking_path(booking),
-                          method: :delete,
-                          data: { confirm: "Are you sure?" }, class: 'btn-cross' %></p>
-
-      </div>
+        </div>
       <% end %>
   </div>
 </div>
