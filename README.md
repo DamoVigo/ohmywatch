@@ -1,7 +1,7 @@
 ## oHMyWatch
 
 # One week bootcamp project.
-# Basic CRUD Application for a luxury watches renting service.
+# Basic CRUD App for a luxury watches renting service.
 
 Features : <br/>
 Users can offer a new watch to rent with specific period. They can edit or delete their offer. <br/>
