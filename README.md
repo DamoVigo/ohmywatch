@@ -2,15 +2,15 @@
 
 # One week bootcamp project. Basic CRUD Application for a luxury watches renting service.
 
-Features :
+Features : <br/>
 Users can offer a new watch to rent with specific period. They can edit or delete their offer. Clients can browse all available watches, with basic geolocation, and validate a booking.
-
-<img src="app/assets/images/watch1_screenshot.png" alt="Logged-in Page"/>
-
-![Watches#show](https://raw.githubusercontent.com/DamoVigo/ohmywatch/master/app/assets/images/watch2_screenshot.png)
 
 [Visit Live Project !](https://mywatchesrent.herokuapp.com/)
 Loading may take up to 40s without any recent visit.
+
+![Logged-in Page](https://raw.githubusercontent.com/DamoVigo/ohmywatch/master/app/assets/images/watch1_screenshot.png)
+
+![Watches#show](https://raw.githubusercontent.com/DamoVigo/ohmywatch/master/app/assets/images/watch2_screenshot.png)
 
 Collaborators :
  1. Gwendal Le Loarer
