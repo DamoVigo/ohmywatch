@@ -5,7 +5,7 @@
 Users can offer a new watch to rent with specific period. They can edit or delete their offer. Clients can browse all available watches, with basic geolocation and validate a booking.
 
 ```
-![Logged-in Page](https://raw.github.com/DamoVigo/ohmywatch/master/app/assets/images/watch1_screenshot.png)
+![Logged-in Page](/app/assets/images/watch1_screenshot.png)
 ```
 ```
 ![Watches#show](https://raw.github.com/DamoVigo/ohmywatch/master/app/assets/images/watch2_screenshot.png)
