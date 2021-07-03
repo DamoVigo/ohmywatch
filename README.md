@@ -7,6 +7,7 @@ Users can offer a new watch to rent with specific period. They can edit or delet
 
 ```
 ![Logged-in Page](../app/assets/images/watch1_screenshot.png?raw=true)
+<img src="/app/assets/images/watch1_screenshot.png" alt="Logged-in Page"/>
 ```
 ```
 ![Watches#show](https://raw.githubusercontent.com/DamoVigo/ohmywatch/blob/master/app/assets/images/watch2_screenshot.png?raw=true)
