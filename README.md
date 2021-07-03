@@ -1,9 +1,11 @@
 ## oHMyWatch
 
-# One week bootcamp project. Basic CRUD Application for a luxury watches renting service.
+# One week bootcamp project.
+# Basic CRUD Application for a luxury watches renting service.
 
 Features : <br/>
-Users can offer a new watch to rent with specific period. They can edit or delete their offer. Clients can browse all available watches, with basic geolocation, and validate a booking.
+Users can offer a new watch to rent with specific period. They can edit or delete their offer. <br/>
+Clients can browse all available watches, with basic geolocation, and validate a booking.
 
 [Visit Live Project !](https://mywatchesrent.herokuapp.com/)
 Loading may take up to 40s without any recent visit.
