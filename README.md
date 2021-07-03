@@ -9,7 +9,7 @@ Users can offer a new watch to rent with specific period. They can edit or delet
 ![Logged-in Page](app/assets/images/watch1_screenshot.png?raw=true)
 ```
 ```
-![Watches#show](https://raw.githubusercontent.com/DamoVigo/ohmywatch/master/app/assets/images/watch2_screenshot.png)
+![Watches#show](https://raw.githubusercontent.com/DamoVigo/ohmywatch/blob/master/app/assets/images/watch2_screenshot.png?raw=true)
 ```
 [Visit Live Project !](https://mywatchesrent.herokuapp.com/)
 Loading may take up to 40s without any recent visit.
